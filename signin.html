@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Efsane Filmler</title>
+	
+	<script>
+		function uyeol()
+	{
+	
+		localStorage.setItem("isim", document.getElementById("kullaniciadi").value);
+		localStorage.setItem("mail", document.getElementById("kemail").value);
+		localStorage.setItem("sifre", document.getElementById("sifre").value);
+		
+		alert("Sayın " + localStorage.getItem("isim") + " Siteye Kaydınız Başarılı."); 
+	}
+		</script>
+
+</head>
+ 
+<body>
+    <!--ust başlangıç -->
+	<div class="ust">
+		<a href="index.html">
+			<img src="img/logo1.png" height="90" width="250"></a>
+
+			<div class="butons">
+				<div class="giriss">
+					<a href="login.html"><center><button class="btn-1"> Giriş Yap</button></center></a>
+				</div>
+				<div class="kayitt">
+					<a href="signin.html"><center><button class="btn-1"> Kayıt Ol</button></center></a>
+				</div>
+			</div>
+	</div>
+	<!--ust bitiş -->
+
+	<!--menu başlangıç -->
+	<div class="menu">
+		<ul>
+			<li><a href="index.html"><b>AnaSayfa</b></a></li>
+			<li><a href="galery.html">Galeri</a></li>
+			<li><a href="legal.html">Legal</a></li>
+			<li><a href="hakkinda.html">Hakkında</a></li>
+			<li><a href="sitemap.html">Site Haritası</a></li>
+			<li><a href="iletisim.html">İletişim</a></li>
+			<div class="butonhareket">
+			<input id="arama" type="search">
+			<label for="arama">Sitede Ara</label>
+		
+
+		</ul>
+	</div>
+    <!--menu bitiş -->
+    <div class="container">
+
+		<form id="yorum" action="" method="">
+			<h2>Kullanıcı Kayıt Paneli</h2>
+
+
+			<div class="yorum-control">
+				<input id="kullaniciadi" placeholder="Kullanıcı Adı" type="text" required autofocus>
+			</div>
+			<div class="yorum-control">
+				<input id="kemail" placeholder="E-mail" type="email" required autofocus>
+			</div>
+			<div class="yorum-control">
+				<input  id="sifre" placeholder="Şifre" type="password" required autofocus>
+			</div>
+			<center><button class="btn-1" onclick="uyeol()">Kayıt Ol</button></center>
+			<b>Sitemize Üye Misin ?   </b><a href="login.html">Giriş Yap</a>
+
+		</form>
+
+	</div>
+    
+
+	<div class="menu">
+        <center><b>Efsane Filmler Film Tüm Hakları Saklıdır™ © Efsane Filmler Film
+            </b></center>
+        <center><b> efsanefilmler25@mail.com.tr</b><center>
+    </div>
+</body>
+</html>
