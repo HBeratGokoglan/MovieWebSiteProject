@@ -17,8 +17,3 @@ To run the project locally, clone the repository and open `index.html` in your w
 git clone https://github.com/HBeratGokoglan/MovieWebSiteProject.git && cd MovieWebSiteProject && open index.html
 License
 This project is open-source and available under the MIT License.
-
-csharp
-Kodu kopyala
-
-You can copy and paste this directly into your GitHub repository's README file.
